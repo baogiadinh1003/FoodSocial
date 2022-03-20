@@ -1,3 +1,4 @@
+import { registerRootComponent } from 'expo';
 import React from 'react';
 import {
   SafeAreaView,
@@ -16,8 +17,12 @@ const App = () => {
 
 const styles = StyleSheet.create({
   backgroundStyle: {
-    backgroundColor: '#EEEFA8'
+    backgroundColor: '#EEEFA8',
+    width: '100%',
+    height: '100%'
   }
 });
+
+registerRootComponent(App);
 
 export default App;
